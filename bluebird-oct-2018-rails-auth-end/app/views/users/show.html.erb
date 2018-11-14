@@ -1,0 +1,13 @@
+<%# Change @user.username to current_user.username %>
+<h1>
+  Welcome <%= current_user.username %>!
+</h1>
+<form action="<%= session_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Logout">
+</form>
+
+<h2>Your Wizard Profile:</h2>
+<%# render the partial: %>
+<%= render "user", user: @user %>

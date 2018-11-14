@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  color: rgb(226, 167, 4);
+  background: url(http://images6.fanpop.com/image/photos/41300000/hogwarts-harry-potter-41362451-1920-1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Henny Penny', cursive;
+}
+
+.session-form {
+  width: 300px;
+  margin: auto;
+  border-radius: 3px;
+  border: solid 1px rgb(226, 167, 4);
+  background: rgba(25,25,25,0.5);
+  padding: 50px;
+  margin-top: 50px;
+}
+
+input[type="submit"] {
+  font-family: 'Henny Penny', cursive;
+  background: rgb(226, 167, 4);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background: white;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+  border-radius: 3px;
+  padding:5px;
+}
+
+img {
+  border-radius: 100%;
+}

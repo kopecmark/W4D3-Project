@@ -1,0 +1,10 @@
+<%# 
+  We can re-use the user sign up partial since they have the same field
+  We just need to specify that the action_url should POST to session_url and that the form type is now Log In
+  We also need to designate that the partial is in another folder
+
+  Note: This only works as-is because they have the same fields, if the sign up had additional 
+  fields, we could still re-use the partial, but we'd need to add additional logic
+  to conditionally render them for that form type
+ %>
+<%= render 'users/user_form', action_url: session_url, form_type: "Log In" %>
