@@ -7,7 +7,13 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
+  <header>
+    <% if current_user %>
+      <h1>Current User: <%= current_user.user_name %> </h1>
+    <% else %>
+      <h1>No one is logged in</h1>
+    <% end %>  
+  </header>
   <body>
     <%= yield %>
   </body>
